@@ -10,18 +10,18 @@ const tabs = [
 
 export default function SideTabs() {
   return (
-    <div className="hidden md:flex fixed right-0 top-1/2 -translate-y-1/2 z-40 flex-col gap-2">
+    <div className="flex fixed right-0 top-1/2 -translate-y-1/2 z-40 flex-col gap-1.5 md:gap-2">
       {tabs.map((tab) => (
         <a
           key={tab.label}
           href={tab.href}
-          className="flex items-center justify-center text-white font-bold tracking-widest text-xs rounded-r-lg shadow-lg transition-all hover:translate-x-[-4px] hover:shadow-xl"
+          className="flex items-center justify-center text-white font-bold tracking-widest text-[10px] md:text-xs rounded-r-lg shadow-lg transition-all hover:translate-x-[-4px] hover:shadow-xl"
           style={{
             background: tab.bg,
             writingMode: 'vertical-rl',
             transform: 'rotate(180deg)',
-            padding: '20px 10px',
-            minHeight: '120px',
+            padding: '14px 7px',
+            minHeight: '90px',
           }}
         >
           {tab.label}
