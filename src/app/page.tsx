@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import SideTabs from '@/components/SideTabs';
 import HeroSection from '@/app/components/HeroSection';
 import StatsSection from '@/app/components/StatsSection';
 import FeaturesSection from '@/app/components/FeaturesSection';
@@ -12,6 +13,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
+      <SideTabs />
       <main>
         <HeroSection />
         <StatsSection />
