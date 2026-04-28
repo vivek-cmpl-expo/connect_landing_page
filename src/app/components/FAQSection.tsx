@@ -6,17 +6,17 @@ const faqs = [
   {
     question: 'Can both visitors and exhibitors scan badges?',
     answer:
-      'Yes. Visitors scan exhibitor QR badges to save booth contacts, and exhibitors scan visitor badges to capture leads — both from the same platform.',
+      'Yes. Visitors scan exhibitor QR badges to save booth contacts and exhibitors scan visitor badges to capture leads — both from the same platform.',
   },
   {
     question: 'Do I need to download an app?',
     answer:
-      'No app required. CMPLConnect works entirely in your mobile browser. Just open the link, log in, and start scanning.',
+      'No app required. CMPLConnect works entirely in your mobile browser. Just open the link, log inand start scanning.',
   },
   {
     question: 'What information is shared when I scan a badge?',
     answer:
-      'Only the details the person submitted during registration — name, company, designation, email, and phone number.',
+      'Only the details the person submitted during registration — name, company, designation, email and phone number.',
   },
   {
     question: 'Can I access my contacts after the show?',
@@ -107,15 +107,7 @@ export default function FAQSection() {
           ))}
         </div>
 
-        {/* Support CTA */}
-        <div className="mt-10 text-center">
-          <p className="text-muted-foreground text-sm">
-            Still have questions?{' '}
-            <a href="mailto:support@cmplexpo.com" className="font-semibold text-primary hover:underline">
-              Contact our exhibitor support team →
-            </a>
-          </p>
-        </div>
+       
       </div>
     </section>
   );

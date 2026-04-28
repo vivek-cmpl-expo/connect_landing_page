@@ -77,16 +77,16 @@ export default function HeroSection() {
             {/* Event badge */}
             <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm">
               <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-              <span className="text-xs font-semibold uppercase tracking-[0.2em] text-white/70">
-                CMPL Expo 2026 · Mumbai May 4–6 · Delhi November
+              <span className="text-m font-semibold uppercase tracking-[0.2em] text-white/70">
+                CMPL Expo 2026 · Mumbai May 4–6
               </span>
             </div>
 
             <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold leading-[0.95] tracking-tight text-white">
-              Scan, connect,{' '}
+              Scan, connect{' '}
               <span className="gradient-brand-text">and network</span>
               <br />
-              <span className="text-white/60">— at the expo and beyond</span>
+              <span className="text-white/60">- at the expo and beyond</span>
             </h1>
 
             <p className="text-lg text-white/60 leading-relaxed max-w-xl font-light">
@@ -95,7 +95,7 @@ export default function HeroSection() {
 
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
               <a
-                href="#"
+                href="https://scan.cmplconnect.com/register"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-semibold text-white text-sm tracking-wide transition-all duration-300 hover:scale-105 hover:shadow-[0_8px_30px_rgba(26,92,58,0.5)]"
                 style={{ background: 'linear-gradient(135deg, #1a5c3a 0%, #2d7a52 100%)' }}
               >
@@ -103,7 +103,7 @@ export default function HeroSection() {
                 I'm a visitor
               </a>
               <a
-                href="#"
+                href="https://scan.cmplconnect.com/register"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-semibold text-white text-sm tracking-wide border border-white/20 bg-white/5 backdrop-blur-sm transition-all duration-300 hover:bg-white/10 hover:border-white/40"
               >
                 <Icon name="BuildingStorefrontIcon" size={18} variant="outline" />

@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   title: 'CMPLConnect — Exhibitor Command Centre for CMPL Expo 2026',
   description: 'Scan visitor badges, capture leads, and manage your booth at CMPL Expo 2026 Mumbai & Delhi — all from one browser-based platform. No app download needed.',
   icons: {
-    icon: [{ url: '/favicon.ico', type: 'image/x-icon' }],
+    icon: [{ url: '/assets/images/favicon-32x32%20(1).png', type: 'image/png', sizes: '32x32' }],
   },
 };
 

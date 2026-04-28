@@ -29,7 +29,7 @@ const audienceCards: AudienceCard[] = [
     id: 'visitors',
     audience: 'For visitors',
     heading: 'Discover & connect with exhibitors',
-    description: 'Explore pavilions, scan exhibitor badges, and build your supplier shortlist — all from your phone.',
+    description: 'Explore pavilions, scan exhibitor badges and build your supplier shortlist — all from your phone.',
     features: [
       { icon: 'QrCodeIcon', text: 'Scan exhibitor QR badges instantly' },
       { icon: 'BookmarkIcon', text: 'Save exhibitor contacts to your list' },
@@ -42,7 +42,7 @@ const audienceCards: AudienceCard[] = [
     id: 'exhibitors',
     audience: 'For exhibitors',
     heading: 'Capture leads & manage your presence',
-    description: 'Scan visitor badges, collect leads, manage your booth profile, and follow up — no paper, no manual entry.',
+    description: 'Scan visitor badges, collect leads, manage your booth profile and follow up — no paper, no manual entry.',
     features: [
       { icon: 'QrCodeIcon', text: 'Scan visitor QR badges at your booth' },
       { icon: 'TagIcon', text: 'Tag and annotate leads on the floor' },
@@ -65,21 +65,21 @@ const platformFeatures: PlatformFeature[] = [
     id: 'contacts',
     icon: 'UsersIcon',
     title: 'Contacts & leads',
-    description: 'Save scanned contacts, add notes, and build your list throughout the show.',
+    description: 'Save scanned contacts, add notes and build your list throughout the show.',
     tag: 'Visitors & exhibitors',
   },
   {
     id: 'guide',
     icon: 'MapIcon',
     title: 'Show guide & agenda',
-    description: 'Browse the exhibitor directory, floor map, and full conference schedule.',
+    description: 'Browse the exhibitor directory, floor map and full conference schedule.',
     tag: 'Visitors',
   },
   {
     id: 'booth',
     icon: 'BuildingStorefrontIcon',
     title: 'Booth profile',
-    description: 'Showcase your brand, products, and contact details so visitors can find and save you.',
+    description: 'Showcase your brand, products and contact details so visitors can find and save you.',
     tag: 'Exhibitors',
   },
   {

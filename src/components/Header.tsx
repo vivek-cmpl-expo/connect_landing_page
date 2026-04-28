@@ -38,8 +38,8 @@ export default function Header() {
         }`}
         style={{
           background: scrolled
-            ? 'rgba(30,42,58,0.95)'
-            : 'rgba(30,42,58,0.8)',
+            ? 'rgb(255, 255, 255)'
+            : 'rgb(255, 255, 255)',
           backdropFilter: 'blur(20px)',
         }}
       >
@@ -47,12 +47,10 @@ export default function Header() {
           {/* Logo */}
           <div className="flex items-center gap-2.5">
             <AppLogo
-              size={36}
+              size={324}
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             />
-            <span className="font-display font-bold text-lg text-white tracking-tight hidden sm:block">
-              CMPLConnect
-            </span>
+       
           </div>
 
           {/* Desktop nav */}
@@ -61,7 +59,8 @@ export default function Header() {
               <a
                 key={link?.label}
                 href={link?.href}
-                className="nav-link-underline text-xs font-semibold uppercase tracking-[0.15em] text-white/60 hover:text-white transition-colors pb-0.5"
+                className="nav-link-underline text-xs font-semibold uppercase tracking-[0.15em] transition-colors pb-0.5 hover:opacity-70"
+                style={{ color: '#1a3d28' }}
               >
                 {link?.label}
               </a>
@@ -71,23 +70,25 @@ export default function Header() {
           {/* Desktop CTAs */}
           <div className="hidden md:flex items-center gap-3">
             <a
-              href="#"
-              className="text-xs font-semibold text-white/70 hover:text-white transition-colors px-4 py-2"
+              href="https://scan.cmplconnect.com/"
+              className="text-xs font-semibold transition-colors px-4 py-2 hover:opacity-70"
+              style={{ color: '#1a3d28' }}
             >
               Log in
             </a>
             <a
-              href="#features"
+              href="https://scan.cmplconnect.com/register"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-xs font-bold text-white uppercase tracking-widest transition-all hover:opacity-90 hover:scale-105"
               style={{ background: 'linear-gradient(135deg, #1a5c3a 0%, #2d7a52 100%)' }}
             >
-              Get Started
+              Register
             </a>
           </div>
 
           {/* Mobile hamburger */}
           <button
-            className="md:hidden flex items-center justify-center w-10 h-10 rounded-lg text-white/70 hover:text-white hover:bg-white/10 transition-all"
+            className="md:hidden flex items-center justify-center w-10 h-10 rounded-lg transition-all hover:bg-black/5"
+            style={{ color: '#1a3d28' }}
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label={menuOpen ? 'Close menu' : 'Open menu'}
           >
@@ -114,19 +115,19 @@ export default function Header() {
             ))}
             <div className="flex flex-col items-center gap-4 mt-8 w-full max-w-xs">
               <a
-                href="#"
+                href="https://scan.cmplconnect.com/"
                 onClick={handleLinkClick}
                 className="w-full text-center py-3.5 rounded-xl text-sm font-semibold text-white/70 border border-white/20 hover:border-white/40 hover:text-white transition-all"
               >
                 Log in to Dashboard
               </a>
               <a
-                href="#features"
+                href="https://scan.cmplconnect.com/register"
                 onClick={handleLinkClick}
                 className="w-full text-center py-3.5 rounded-xl text-sm font-bold text-white transition-all hover:opacity-90"
                 style={{ background: 'linear-gradient(135deg, #1a5c3a 0%, #2d7a52 100%)' }}
               >
-                Get Started as Exhibitor
+                Register Now
               </a>
             </div>
           </div>
